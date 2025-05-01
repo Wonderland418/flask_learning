@@ -21,7 +21,7 @@ def greet(name):
 
 from flask import request
 
-#由於只允許用POST方式進入，如果用GET進入會報錯"Method Not Allowed"
+#由於只允許用POST方式進入，如果用GET進入會報錯"405 Method Not Allowed"
 @app.route('/submit' , methods = ['POST'])
 def submit():
     username = request.form.get('username')

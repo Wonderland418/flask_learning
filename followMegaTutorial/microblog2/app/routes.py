@@ -2,14 +2,4 @@ from app import app
 @app.route('/')
 @app.route('/index')
 def index():
-    user = {'username':'Irene'}
-    return '''
-        <html>
-            <head>
-                <title>Home Page - Microblog</title>
-            </head>
-            <body>
-                <h1>Hello,'''+ user['username'] + '''!</h1>
-            </body>
-        </html>
-    '''
+    return "Hello,World!"
