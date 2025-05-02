@@ -1,7 +1,12 @@
+<!--使用if else statement：如果程式忘記傳遞title，會顯示default"Welcome to Microblog"-->
 <!DOCTYPE html>
 <html>
     <head>
+        {% if title %}
         <title>{{title}} - Microblog</title>
+        {% else %}
+        <title>Welcome to Microblog!</title>
+        {% endif %}
     </head>
     <body>
         <h1> Hello,{{user.username}}!</h1>
